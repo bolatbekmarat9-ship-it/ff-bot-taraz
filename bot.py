@@ -1,8 +1,8 @@
-import logging
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "9189617796:AAF..."
+TOKEN = os.environ.get("BOT_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
